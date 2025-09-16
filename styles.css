@@ -23,6 +23,11 @@ footer .top {
   font-size: 28px;
   font-weight: bold;
 }
+.media-icons {
+  display: flex;
+  gap: 15px; /* optional: spacing between icons */
+  align-items: center; /* vertically center icons */
+}
 
 .media-icons a {
   color: #fff;
