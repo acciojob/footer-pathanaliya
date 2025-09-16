@@ -1,1 +1,118 @@
 /* your code here */
+footer {
+  background: #111;
+  color: #fff;
+  width: 100%;
+  padding-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+footer .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.media-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.media-icons a:hover {
+  color: #f39c12;
+}
+
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.link-boxes .box {
+  list-style: none;
+  width: 22%;
+  padding: 0;
+}
+
+.link-boxes .link_name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.link-boxes li a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.link-boxes li a:hover {
+  color: #f39c12;
+}
+
+.bottom-details {
+  background: #222;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.bottom-details .bottom_text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #aaa;
+}
+
+.bottom-details a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.bottom-details a:hover {
+  color: #f39c12;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .link-boxes .box {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .media-icons {
+    margin-top: 10px;
+  }
+  .link-boxes .box {
+    width: 100%;
+  }
+  .bottom-details .bottom_text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
